@@ -1,0 +1,175 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/disk1/git/spinlock/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/d36d8436/
+%	./Makefile	/^%:%.c$/;"	t
+BUSY	./spinlock-xchg-backoff.h	/^#define BUSY /;"	d
+BUSY	./spinlock-xchg-hle.h	/^#define BUSY /;"	d
+BUSY	./spinlock-xchg.h	/^#define BUSY /;"	d
+CACHE_LINE	./test-spinlock.c	/^#define CACHE_LINE /;"	d	file:
+CFLAGS	./Makefile	/^CFLAGS = -O2 -g -std=gnu99 -Wall$/;"	m
+LDFLAGS	./Makefile	/^LDFLAGS = -lpthread$/;"	m
+NCOUNTER	./test-spinlock.c	/^#define NCOUNTER /;"	d	file:
+NITERS	./stack.c	/^#define NITERS /;"	d	file:
+NTHR	./stack.c	/^#define NTHR /;"	d	file:
+N_PAIR	./test-spinlock.c	/^#define N_PAIR /;"	d	file:
+Node	./stack.c	/^typedef struct Node {$/;"	s	file:
+Node	./stack.c	/^} Node;$/;"	t	typeref:struct:Node	file:
+SPINLOCK_ATTR	./spinlock-cmpxchg.h	/^#define SPINLOCK_ATTR /;"	d
+SPINLOCK_ATTR	./spinlock-pthread.h	/^#define SPINLOCK_ATTR /;"	d
+SPINLOCK_INITIALIZER	./spinlock-cmpxchg.h	/^#define SPINLOCK_INITIALIZER /;"	d
+SPINLOCK_INITIALIZER	./spinlock-k42.h	/^#define SPINLOCK_INITIALIZER /;"	d
+SPINLOCK_INITIALIZER	./spinlock-pthread.h	/^#define SPINLOCK_INITIALIZER /;"	d
+SPINLOCK_INITIALIZER	./spinlock-ticket.h	/^#define SPINLOCK_INITIALIZER /;"	d
+SPINLOCK_INITIALIZER	./spinlock-xchg-backoff.h	/^#define SPINLOCK_INITIALIZER /;"	d
+SPINLOCK_INITIALIZER	./spinlock-xchg-hle.h	/^#define SPINLOCK_INITIALIZER /;"	d
+SPINLOCK_INITIALIZER	./spinlock-xchg.h	/^#define SPINLOCK_INITIALIZER /;"	d
+Stack	./stack.c	/^} Stack;$/;"	t	typeref:struct:__anoneaa201a90108	file:
+_GNU_SOURCE	./test-spinlock.c	/^#define _GNU_SOURCE$/;"	d	file:
+_RTM_H	./rtm.h	/^#define _RTM_H /;"	d
+_SPINLOCK_CMPXCHG_H	./spinlock-cmpxchg.h	/^#define _SPINLOCK_CMPXCHG_H$/;"	d
+_SPINLOCK_H	./spinlock-ticket.h	/^#define _SPINLOCK_H$/;"	d
+_SPINLOCK_K42	./spinlock-k42.h	/^#define _SPINLOCK_K42$/;"	d
+_SPINLOCK_MCS	./spinlock-mcs.h	/^#define _SPINLOCK_MCS$/;"	d
+_SPINLOCK_PTHREAD_H	./spinlock-pthread.h	/^#define _SPINLOCK_PTHREAD_H$/;"	d
+_SPINLOCK_XCHG_BACKOFF_H	./spinlock-xchg-backoff.h	/^#define _SPINLOCK_XCHG_BACKOFF_H$/;"	d
+_SPINLOCK_XCHG_H	./spinlock-xchg-hle.h	/^#define _SPINLOCK_XCHG_H$/;"	d
+_SPINLOCK_XCHG_H	./spinlock-xchg.h	/^#define _SPINLOCK_XCHG_H$/;"	d
+_XABORT_CAPACITY	./rtm.h	/^#define _XABORT_CAPACITY	/;"	d
+_XABORT_CODE	./rtm.h	/^#define _XABORT_CODE(/;"	d
+_XABORT_CONFLICT	./rtm.h	/^#define _XABORT_CONFLICT	/;"	d
+_XABORT_DEBUG	./rtm.h	/^#define _XABORT_DEBUG	/;"	d
+_XABORT_EXPLICIT	./rtm.h	/^#define _XABORT_EXPLICIT	/;"	d
+_XABORT_NESTED	./rtm.h	/^#define _XABORT_NESTED	/;"	d
+_XABORT_RETRY	./rtm.h	/^#define _XABORT_RETRY	/;"	d
+_XBEGIN_STARTED	./rtm.h	/^#define _XBEGIN_STARTED	/;"	d
+__HLE_ACQUIRE	./spinlock-xchg-hle.h	/^#define __HLE_ACQUIRE /;"	d
+__HLE_RELEASE	./spinlock-xchg-hle.h	/^#define __HLE_RELEASE /;"	d
+__anon667f81920108	./spinlock-cmpxchg.h	/^typedef struct {$/;"	s
+__anon6fd829cc0108	./spinlock-ticket.h	/^    {$/;"	s	union:ticketlock
+__anoneaa201a90108	./stack.c	/^typedef struct {$/;"	s	file:
+__rtm_force_inline	./rtm.h	/^#define __rtm_force_inline /;"	d
+__testandset	./spinlock-cmpxchg.h	/^SPINLOCK_ATTR char __testandset(spinlock *p)$/;"	f	typeref:typename:SPINLOCK_ATTR char
+_xabort	./rtm.h	/^static __rtm_force_inline void _xabort(const unsigned int status)$/;"	f	typeref:typename:__rtm_force_inline void
+_xbegin	./rtm.h	/^static __rtm_force_inline int _xbegin(void)$/;"	f	typeref:typename:__rtm_force_inline int
+_xend	./rtm.h	/^static __rtm_force_inline void _xend(void)$/;"	f	typeref:typename:__rtm_force_inline void
+_xtest	./rtm.h	/^static __rtm_force_inline int _xtest(void)$/;"	f	typeref:typename:__rtm_force_inline int
+all	./Makefile	/^all: $(programs)$/;"	t
+atomic_inc64	./stack.c	/^static inline void atomic_inc64(volatile unsigned long* address)$/;"	f	typeref:typename:void	file:
+atomic_xadd	./spinlock-ticket.h	/^#define atomic_xadd(/;"	d
+barrier	./spinlock-k42.h	/^#define barrier(/;"	d
+barrier	./spinlock-mcs.h	/^#define barrier(/;"	d
+barrier	./spinlock-ticket.h	/^#define barrier(/;"	d
+barrier	./spinlock-xchg-backoff.h	/^#define barrier(/;"	d
+barrier	./spinlock-xchg-hle.h	/^#define barrier(/;"	d
+barrier	./spinlock-xchg.h	/^#define barrier(/;"	d
+bind_core	./test-spinlock.c	/^void bind_core(int threadid) {$/;"	f	typeref:typename:void
+calc_time	./test-spinlock.c	/^static void calc_time(struct timeval *start, struct timeval *end) {$/;"	f	typeref:typename:void	file:
+clean	./Makefile	/^clean:$/;"	t
+cmpxchg	./spinlock-k42.h	/^#define cmpxchg(/;"	d
+cmpxchg	./spinlock-mcs.h	/^#define cmpxchg(/;"	d
+cmpxchg	./spinlock-ticket.h	/^#define cmpxchg(/;"	d
+cnt_lock	./test-spinlock.c	/^mcs_lock cnt_lock = NULL;$/;"	v	typeref:typename:mcs_lock
+compare_and_swap	./stack.c	/^static inline unsigned int compare_and_swap(volatile void *address,$/;"	f	typeref:typename:unsigned int	file:
+counter	./test-spinlock.c	/^static __thread int8_t counter[CACHE_LINE*NCOUNTER];$/;"	v	typeref:typename:__thread int8_t[]	file:
+cpu_relax	./spinlock-cmpxchg.h	/^#define cpu_relax(/;"	d
+cpu_relax	./spinlock-k42.h	/^#define cpu_relax(/;"	d
+cpu_relax	./spinlock-mcs.h	/^#define cpu_relax(/;"	d
+cpu_relax	./spinlock-ticket.h	/^#define cpu_relax(/;"	d
+cpu_relax	./spinlock-xchg-backoff.h	/^#define cpu_relax(/;"	d
+cpu_relax	./spinlock-xchg-hle.h	/^#define cpu_relax(/;"	d
+cpu_relax	./spinlock-xchg.h	/^#define cpu_relax(/;"	d
+cpu_relax	./test-spinlock.c	/^#define cpu_relax(/;"	d	file:
+end_time	./test-spinlock.c	/^static struct timeval end_time;$/;"	v	typeref:struct:timeval	file:
+gstack	./stack.c	/^Stack gstack;$/;"	v	typeref:typename:Stack
+inc_thread	./test-spinlock.c	/^void *inc_thread(void *id) {$/;"	f	typeref:typename:void *
+k42_lock	./spinlock-k42.h	/^static inline void k42_lock(k42lock *l)$/;"	f	typeref:typename:void
+k42_trylock	./spinlock-k42.h	/^static inline int k42_trylock(k42lock *l)$/;"	f	typeref:typename:int
+k42_unlock	./spinlock-k42.h	/^static inline void k42_unlock(k42lock *l)$/;"	f	typeref:typename:void
+k42lock	./spinlock-k42.h	/^struct k42lock$/;"	s
+k42lock	./spinlock-k42.h	/^typedef struct k42lock k42lock;$/;"	t	typeref:struct:k42lock
+lock	./spinlock-cmpxchg.h	/^    volatile char lock;$/;"	m	struct:__anon667f81920108	typeref:typename:volatile char
+lock_mcs	./spinlock-mcs.h	/^static inline void lock_mcs(mcs_lock *m, mcs_lock_t *me)$/;"	f	typeref:typename:void
+main	./stack.c	/^int main(int argc, const char *argv[]) {$/;"	f	typeref:typename:int
+main	./test-spinlock.c	/^int main(int argc, const char *argv[])$/;"	f	typeref:typename:int
+mcs_lock	./spinlock-mcs.h	/^typedef struct mcs_lock_t *mcs_lock;$/;"	t	typeref:struct:mcs_lock_t *
+mcs_lock_t	./spinlock-mcs.h	/^struct mcs_lock_t$/;"	s
+mcs_lock_t	./spinlock-mcs.h	/^typedef struct mcs_lock_t mcs_lock_t;$/;"	t	typeref:struct:mcs_lock_t
+mutex	./stack.c	/^    pthread_mutex_t mutex;$/;"	m	struct:__anoneaa201a90108	typeref:typename:pthread_mutex_t	file:
+next	./spinlock-k42.h	/^    k42lock *next;$/;"	m	struct:k42lock	typeref:typename:k42lock *
+next	./spinlock-mcs.h	/^    mcs_lock_t *next;$/;"	m	struct:mcs_lock_t	typeref:typename:mcs_lock_t *
+next	./stack.c	/^    struct Node *next;$/;"	m	struct:Node	typeref:struct:Node *	file:
+nthr	./test-spinlock.c	/^static int nthr = 0;$/;"	v	typeref:typename:int	file:
+pop	./stack.c	/^Node *pop(Stack *stack) {$/;"	f	typeref:typename:Node *
+popcount	./stack.c	/^volatile unsigned long popcount = 0;$/;"	v	typeref:typename:volatile unsigned long
+poper	./stack.c	/^void *poper(void *dummy) {$/;"	f	typeref:typename:void *
+programs	./Makefile	/^programs = test-spinlock-cmpxchg test-spinlock-xchg test-spinlock-k42 \\$/;"	m
+push	./stack.c	/^void push(Stack *stack, Node *n) {$/;"	f	typeref:typename:void
+pusher	./stack.c	/^void *pusher(void *dummy) {$/;"	f	typeref:typename:void *
+run_test	./run-test-spinlock.sh	/^function run_test() {$/;"	f
+s	./spinlock-ticket.h	/^    } s;$/;"	m	union:ticketlock	typeref:struct:ticketlock::__anon6fd829cc0108
+sl	./test-spinlock.c	/^spinlock sl;$/;"	v	typeref:typename:spinlock
+slock	./stack.c	/^    Spinlock slock;$/;"	m	struct:__anoneaa201a90108	typeref:typename:Spinlock	file:
+spin	./spinlock-mcs.h	/^    int spin;$/;"	m	struct:mcs_lock_t	typeref:typename:int
+spin_lock	./spinlock-cmpxchg.h	/^SPINLOCK_ATTR void spin_lock(spinlock *lock)$/;"	f	typeref:typename:SPINLOCK_ATTR void
+spin_lock	./spinlock-k42.h	/^#define spin_lock /;"	d
+spin_lock	./spinlock-pthread.h	/^SPINLOCK_ATTR void spin_lock(spinlock *lock)$/;"	f	typeref:typename:SPINLOCK_ATTR void
+spin_lock	./spinlock-ticket.h	/^#define spin_lock /;"	d
+spin_lock	./spinlock-xchg-backoff.h	/^static inline void spin_lock(spinlock *lock)$/;"	f	typeref:typename:void
+spin_lock	./spinlock-xchg-hle.h	/^static inline void spin_lock(spinlock *lock)$/;"	f	typeref:typename:void
+spin_lock	./spinlock-xchg.h	/^static inline void spin_lock(spinlock *lock)$/;"	f	typeref:typename:void
+spin_trylock	./spinlock-xchg-backoff.h	/^static inline int spin_trylock(spinlock *lock)$/;"	f	typeref:typename:int
+spin_trylock	./spinlock-xchg-hle.h	/^static inline int spin_trylock(spinlock *lock)$/;"	f	typeref:typename:int
+spin_trylock	./spinlock-xchg.h	/^static inline int spin_trylock(spinlock *lock)$/;"	f	typeref:typename:int
+spin_unlock	./spinlock-cmpxchg.h	/^SPINLOCK_ATTR void spin_unlock(spinlock *s)$/;"	f	typeref:typename:SPINLOCK_ATTR void
+spin_unlock	./spinlock-k42.h	/^#define spin_unlock /;"	d
+spin_unlock	./spinlock-pthread.h	/^SPINLOCK_ATTR void spin_unlock(spinlock *lock)$/;"	f	typeref:typename:SPINLOCK_ATTR void
+spin_unlock	./spinlock-ticket.h	/^#define spin_unlock /;"	d
+spin_unlock	./spinlock-xchg-backoff.h	/^static inline void spin_unlock(spinlock *lock)$/;"	f	typeref:typename:void
+spin_unlock	./spinlock-xchg-hle.h	/^static inline void spin_unlock(spinlock *lock)$/;"	f	typeref:typename:void
+spin_unlock	./spinlock-xchg.h	/^static inline void spin_unlock(spinlock *lock)$/;"	f	typeref:typename:void
+spinlock	./spinlock-cmpxchg.h	/^} spinlock;$/;"	t	typeref:struct:__anon667f81920108
+spinlock	./spinlock-k42.h	/^#define spinlock /;"	d
+spinlock	./spinlock-pthread.h	/^#define spinlock /;"	d
+spinlock	./spinlock-ticket.h	/^#define spinlock /;"	d
+spinlock	./spinlock-xchg-backoff.h	/^typedef unsigned char spinlock;$/;"	t	typeref:typename:unsigned char
+spinlock	./spinlock-xchg-hle.h	/^typedef unsigned char spinlock;$/;"	t	typeref:typename:unsigned char
+spinlock	./spinlock-xchg.h	/^typedef unsigned char spinlock;$/;"	t	typeref:typename:unsigned char
+start_time	./test-spinlock.c	/^static struct timeval start_time;$/;"	v	typeref:struct:timeval	file:
+tail	./spinlock-k42.h	/^    k42lock *tail;$/;"	m	struct:k42lock	typeref:typename:k42lock *
+test-rtm	./Makefile	/^test-rtm: test-spinlock.c$/;"	t
+test-spinlock-cmpxchg	./Makefile	/^test-spinlock-cmpxchg: test-spinlock.c$/;"	t
+test-spinlock-k42	./Makefile	/^test-spinlock-k42: test-spinlock.c$/;"	t
+test-spinlock-mcs	./Makefile	/^test-spinlock-mcs: test-spinlock.c$/;"	t
+test-spinlock-pthread	./Makefile	/^test-spinlock-pthread: test-spinlock.c$/;"	t
+test-spinlock-ticket	./Makefile	/^test-spinlock-ticket: test-spinlock.c$/;"	t
+test-spinlock-xchg	./Makefile	/^test-spinlock-xchg: test-spinlock.c$/;"	t
+test-spinlock-xchg-backoff	./Makefile	/^test-spinlock-xchg-backoff: test-spinlock.c$/;"	t
+test-spinlock-xchg-hle	./Makefile	/^test-spinlock-xchg-hle: test-spinlock.c$/;"	t
+ticket	./spinlock-ticket.h	/^        unsigned short ticket;$/;"	m	struct:ticketlock::__anon6fd829cc0108	typeref:typename:unsigned short
+ticket_lock	./spinlock-ticket.h	/^static inline void ticket_lock(ticketlock *t)$/;"	f	typeref:typename:void
+ticket_lockable	./spinlock-ticket.h	/^static inline int ticket_lockable(ticketlock *t)$/;"	f	typeref:typename:int
+ticket_trylock	./spinlock-ticket.h	/^static inline int ticket_trylock(ticketlock *t)$/;"	f	typeref:typename:int
+ticket_unlock	./spinlock-ticket.h	/^static inline void ticket_unlock(ticketlock *t)$/;"	f	typeref:typename:void
+ticketlock	./spinlock-ticket.h	/^typedef union ticketlock ticketlock;$/;"	t	typeref:union:ticketlock
+ticketlock	./spinlock-ticket.h	/^union ticketlock$/;"	u
+top	./stack.c	/^    volatile Node *top;$/;"	m	struct:__anoneaa201a90108	typeref:typename:volatile Node *	file:
+trylock_mcs	./spinlock-mcs.h	/^static inline int trylock_mcs(mcs_lock *m, mcs_lock_t *me)$/;"	f	typeref:typename:int
+u	./spinlock-ticket.h	/^    unsigned u;$/;"	m	union:ticketlock	typeref:typename:unsigned
+unlock_mcs	./spinlock-mcs.h	/^static inline void unlock_mcs(mcs_lock *m, mcs_lock_t *me)$/;"	f	typeref:typename:void
+users	./spinlock-ticket.h	/^        unsigned short users;$/;"	m	struct:ticketlock::__anon6fd829cc0108	typeref:typename:unsigned short
+val	./stack.c	/^    int val;$/;"	m	struct:Node	typeref:typename:int	file:
+wait_flag	./test-spinlock.c	/^void wait_flag(volatile uint32_t *flag, uint32_t expect) {$/;"	f	typeref:typename:void
+wflag	./test-spinlock.c	/^static volatile uint32_t wflag;$/;"	v	typeref:typename:volatile uint32_t	file:
+xchg_64	./spinlock-k42.h	/^static inline void *xchg_64(void *ptr, void *x)$/;"	f	typeref:typename:void *
+xchg_64	./spinlock-mcs.h	/^static inline void *xchg_64(void *ptr, void *x)$/;"	f	typeref:typename:void *
+xchg_8	./spinlock-xchg-backoff.h	/^static inline unsigned short xchg_8(void *ptr, unsigned char x)$/;"	f	typeref:typename:unsigned short
+xchg_8	./spinlock-xchg-hle.h	/^static inline unsigned short xchg_8(void *ptr, unsigned char x)$/;"	f	typeref:typename:unsigned short
+xchg_8	./spinlock-xchg.h	/^static inline unsigned short xchg_8(void *ptr, unsigned char x)$/;"	f	typeref:typename:unsigned short

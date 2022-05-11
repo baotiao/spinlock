@@ -1,0 +1,14 @@
+test spin lock using cmpxchg
+52.290011
+test spin lock using xchg
+42.807732
+test spin lock using k42
+44.633993
+test spin lock using mcs
+43.979455
+test spin lock using ticket
+46.454324
+test spin lock using pthread
+50.957273
+test spin lock using xchg-backoff
+111.783334

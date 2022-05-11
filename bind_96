@@ -1,0 +1,7 @@
+test spin lock using cmpxchg
+test spin lock using xchg
+test spin lock using k42
+test spin lock using mcs
+test spin lock using ticket
+test spin lock using pthread
+test spin lock using xchg-backoff

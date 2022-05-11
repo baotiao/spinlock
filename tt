@@ -1,0 +1,88 @@
+└─[$] perf stat -ddd ./test-spinlock-xchg-backoff 32
+6.770730
+ Performance counter stats for './test-spinlock-xchg-backoff 32':
+
+      57986.969537      task-clock (msec)         #    8.561 CPUs utilized
+               838      context-switches          #    0.014 K/sec
+               336      cpu-migrations            #    0.006 K/sec
+               235      page-faults               #    0.004 K/sec
+   143,699,535,952      cycles                    #    2.478 GHz                      (38.45%)
+   <not supported>      stalled-cycles-frontend
+   <not supported>      stalled-cycles-backend
+    44,652,552,257      instructions              #    0.31  insns per cycle          (46.16%)
+    11,028,744,509      branches                  #  190.193 M/sec                    (46.18%)
+         1,572,131      branch-misses             #    0.01% of all branches          (46.21%)
+       429,809,480      L1-dcache-loads           #    7.412 M/sec                    (46.23%)
+         8,831,614      L1-dcache-load-misses     #    2.05% of all L1-dcache hits    (46.27%)
+         3,493,462      LLC-loads                 #    0.060 M/sec                    (30.83%)
+           357,005      LLC-load-misses           #   10.22% of all LL-cache hits     (30.82%)
+   <not supported>      L1-icache-loads
+         5,683,149      L1-icache-load-misses     #    0.098 M/sec                    (30.80%)
+       406,267,192      dTLB-loads                #    7.006 M/sec                    (30.79%)
+           121,766      dTLB-load-misses          #    0.03% of all dTLB cache hits   (30.79%)
+           551,904      iTLB-loads                #    0.010 M/sec                    (30.77%)
+            12,607      iTLB-load-misses          #    2.28% of all iTLB cache hits   (30.75%)
+   <not supported>      L1-dcache-prefetches
+   <not supported>      L1-dcache-prefetch-misses
+
+       6.773480430 seconds time elapsed
+
+└─[$] perf stat -ddd ./test-spinlock-ticket 32
+^@^@^@^@^@110.814347
+ Performance counter stats for './test-spinlock-ticket 32':
+
+    3503847.400869      task-clock (msec)         #   31.618 CPUs utilized
+           161,204      context-switches          #    0.046 K/sec
+           330,324      cpu-migrations            #    0.094 K/sec
+               237      page-faults               #    0.000 K/sec
+ 8,694,535,655,115      cycles                    #    2.481 GHz                      (38.45%)
+   <not supported>      stalled-cycles-frontend
+   <not supported>      stalled-cycles-backend
+   711,286,150,130      instructions              #    0.08  insns per cycle          (46.15%)
+   232,880,312,682      branches                  #   66.464 M/sec                    (46.15%)
+       307,710,114      branch-misses             #    0.13% of all branches          (46.15%)
+   236,682,139,869      L1-dcache-loads           #   67.549 M/sec                    (46.16%)
+     5,172,292,751      L1-dcache-load-misses     #    2.19% of all L1-dcache hits    (46.16%)
+     4,451,379,474      LLC-loads                 #    1.270 M/sec                    (30.78%)
+       272,036,906      LLC-load-misses           #    6.11% of all LL-cache hits     (30.77%)
+   <not supported>      L1-icache-loads
+     1,159,147,698      L1-icache-load-misses     #    0.331 M/sec                    (30.77%)
+   235,780,631,230      dTLB-loads                #   67.292 M/sec                    (30.77%)
+        52,659,979      dTLB-load-misses          #    0.02% of all dTLB cache hits   (30.77%)
+        31,987,743      iTLB-loads                #    0.009 M/sec                    (30.77%)
+        13,632,653      iTLB-load-misses          #   42.62% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches
+   <not supported>      L1-dcache-prefetch-misses
+
+     110.818679495 seconds time elapsed
+
+
+4 pause
+└─[$] perf stat -ddd ./test-spinlock-ticket 32
+^@^@^@^@^@^@^@^@86.063485
+ Performance counter stats for './test-spinlock-ticket 32':
+
+    2756628.882750      task-clock (msec)         #   32.029 CPUs utilized
+               847      context-switches          #    0.000 K/sec
+               203      cpu-migrations            #    0.000 K/sec
+               239      page-faults               #    0.000 K/sec
+ 6,848,852,716,047      cycles                    #    2.485 GHz                      (38.45%)
+   <not supported>      stalled-cycles-frontend
+   <not supported>      stalled-cycles-backend
+   265,296,932,132      instructions              #    0.04  insns per cycle          (46.14%)
+    44,206,538,021      branches                  #   16.036 M/sec                    (46.14%)
+       197,273,850      branch-misses             #    0.45% of all branches          (46.15%)
+    45,782,533,570      L1-dcache-loads           #   16.608 M/sec                    (46.15%)
+     4,748,367,004      L1-dcache-load-misses     #   10.37% of all L1-dcache hits    (46.16%)
+     4,432,778,533      LLC-loads                 #    1.608 M/sec                    (30.78%)
+       261,098,073      LLC-load-misses           #    5.89% of all LL-cache hits     (30.78%)
+   <not supported>      L1-icache-loads
+       107,684,638      L1-icache-load-misses     #    0.039 M/sec                    (30.78%)
+    45,728,876,433      dTLB-loads                #   16.589 M/sec                    (30.78%)
+         4,479,822      dTLB-load-misses          #    0.01% of all dTLB cache hits   (30.77%)
+         3,672,228      iTLB-loads                #    0.001 M/sec                    (30.77%)
+           235,328      iTLB-load-misses          #    6.41% of all iTLB cache hits   (30.76%)
+   <not supported>      L1-dcache-prefetches
+   <not supported>      L1-dcache-prefetch-misses
+
+      86.066015214 seconds time elapsed

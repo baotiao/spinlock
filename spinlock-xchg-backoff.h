@@ -39,6 +39,9 @@ static inline void spin_lock(spinlock *lock)
         }
         while (*lock) {
             wait *= 2; // exponential backoff if can't get lock
+            if (wait > 16) {
+              wait = 16;
+            }
             for (int i = 0; i < wait; i++) {
                 cpu_relax();
             }

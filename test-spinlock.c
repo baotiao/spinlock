@@ -68,11 +68,11 @@
 /* Number of total lock/unlock pair.
  * Note we need to ensure the total pair of lock and unlock opeartion are the
  * same no matter how many threads are used. */
-#define N_PAIR 16000000
+#define N_PAIR 160000
 
 /* Bind threads to specific cores. The goal is to make threads locate on the
  * same physical CPU. Modify bind_core before using this. */
-//#define BIND_CORE
+#define BIND_CORE
 
 static int nthr = 0;
 
@@ -100,11 +100,11 @@ static void calc_time(struct timeval *start, struct timeval *end) {
         end->tv_sec - start->tv_sec,
         end->tv_usec - start->tv_usec
     };
-    printf("%ld.%06ld\t", (long)interval.tv_sec, (long)interval.tv_usec);
+    printf("%ld.%06ld\n", (long)interval.tv_sec, (long)interval.tv_usec);
 }
 
 // Use an array of counter to see effect on RTM if touches more cache line.
-#define NCOUNTER 1
+#define NCOUNTER 10000
 #define CACHE_LINE 64
 
 // Use thread local counter to avoid cache contention between cores.
